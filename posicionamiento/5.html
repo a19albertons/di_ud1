@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .verdeClaro {
+        grid-area: verdeClaro;
+        background-color: #4ceba9;
+        width: 100%;
+        height: 100%;
+    }
+    .verdeOscuro {
+        grid-area: verdeOscuro;
+        background-color: #387800;
+        width: 100%;
+        height: 100%;
+    }
+    .rojo {
+        grid-area: rojo;
+        background-color: #fe0000;
+        width: 100%;
+        height: 100%;
+    }   
+    .naranja {
+        grid-area: naranja;
+        background-color: #ff6d00;
+        width: 100%;
+        height: 100%;
+    } 
+    .violeta {
+        grid-area: violeta;
+        background-color: #f000ff;
+        width: 100%;
+        height: 100%;
+    }
+    .azulOscuro {
+        grid-area: azulOscuro;
+        background-color: #01509f;
+        width: 100%;
+        height: 100%;
+    }
+    .marronClaro {
+        grid-area: marronClaro;
+        background-color: #ca9e61;
+        width: 100%;
+        height: 100%;
+    }
+    .padre {
+        display: grid;
+        grid-template-areas: 
+        "verdeClaro verdeClaro verdeClaro verdeOscuro verdeOscuro"
+        "verdeClaro verdeClaro verdeClaro verdeOscuro verdeOscuro"
+        "verdeClaro verdeClaro verdeClaro azulOscuro azulOscuro"
+        "verdeClaro verdeClaro verdeClaro azulOscuro azulOscuro"
+        "rojo violeta violeta azulOscuro azulOscuro"
+        "naranja violeta violeta azulOscuro azulOscuro"
+        "naranja violeta violeta marronClaro marronClaro"
+        ;
+        height: 100vh;
+        width: 100vw;
+        gap: 1vh 1vw;
+        box-sizing: border-box;
+        padding: 1vh 1vw;
+    }
+    </style>
+</head>
+<body style="margin: 0%; padding: 0%; height: 100%;">
+    <div class="padre">
+        <div class="verdeClaro"></div>
+        <div class="verdeOscuro"></div>
+        <div class="rojo"></div>
+        <div class="naranja"></div>
+        <div class="violeta"></div>
+        <div class="azulOscuro"></div>
+        <div class="marronClaro"></div>
+    </div>
+
+</body>
+</html>
