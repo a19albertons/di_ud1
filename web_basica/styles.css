@@ -1,0 +1,85 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.superior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    height: 5vh;
+    width: 100vw;
+    margin-bottom: 0.75vh;
+}
+.contenedor_padre {
+    display: flex;
+    height: 87vh;
+    width: 100vw;
+    margin-bottom: 0.75vh;
+}
+.izquierda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    height: 100%;
+    width: 20%;
+    margin-right: 0.75%;
+}
+.centro {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    height: 100%;
+    width: 78.5%;
+    margin-right: 0.75%;
+}
+.derecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    height: 100%;
+    width: 20%;
+}
+.header_central {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    background-color: yellow;
+    width: 100%;
+    margin-bottom: 2.5%;
+}
+.bloque {
+    display: block;
+    width: 100%;
+    margin: 2.5%;
+    text-align: center;
+}
+.article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65%;
+    background-color: yellow;
+    width: 100%;
+    margin-bottom: 2.5%;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 13.75%;
+    background-color: yellow;
+    width: 100%;
+    margin-bottom: 2.5%;
+}
+.inferior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    height: 6.5vh;
+    width: 100vw;
+}
