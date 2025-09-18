@@ -6,7 +6,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: #cd5c5c; /* antes red */
+    color: white;
     height: 5vh;
     width: 100vw;
     margin-bottom: 0.75vh;
@@ -21,7 +22,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: #cd5c5c; /* antes red */
+    color: white;
     height: 100%;
     width: 20%;
     margin-right: 0.75%;
@@ -29,7 +31,8 @@ body {
 .centro {
     display: flex;
     justify-content: center;
-    background-color: red;
+    background-color: #cd5c5c; /* antes red */
+    color: white;
     height: 100%;
     width: 78.5%;
     margin-right: 0.75%;
@@ -38,7 +41,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: #cd5c5c; /* antes red */
+    color: white;
     height: 100%;
     width: 20%;
 }
@@ -47,7 +51,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 10%;
-    background-color: yellow;
+    background-color: #bdb76b; /* antes yellow */
+    color: white;
     width: 100%;
     margin-bottom: 2.5%;
 }
@@ -56,13 +61,15 @@ body {
     width: 100%;
     margin: 2.5%;
     text-align: center;
+    color: white;
 }
 .article {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 65%;
-    background-color: yellow;
+    background-color: #bdb76b; /* antes yellow */
+    color: white;
     width: 100%;
     margin-bottom: 2.5%;
 }
@@ -71,7 +78,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 13.75%;
-    background-color: yellow;
+    background-color: #bdb76b; /* antes yellow */
+    color: white;
     width: 100%;
     margin-bottom: 2.5%;
 }
@@ -79,7 +87,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: #cd5c5c; /* antes red */
+    color: white;
     height: 6.5vh;
     width: 100vw;
 }

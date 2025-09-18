@@ -11,7 +11,6 @@ import java.awt.GridBagLayout;
 
 public class dolor {
     public static void main(String[] args) {
-        // ...existing code...
         
         JFrame ventana = new JFrame("venana");
         ventana.setSize(600, 400);
@@ -23,20 +22,26 @@ public class dolor {
 
         // Superior
         JPanel superior = new JPanel();
-        superior.setBackground(Color.red);
-        superior.add(new JLabel("<header>"));
+        superior.setBackground(new Color(205,92,92));
+        JLabel superiorLabel = new JLabel("<header>");
+        superiorLabel.setForeground(Color.white);
+        superior.add(superiorLabel);
         ventana.add(superior,BorderLayout.NORTH);
 
         // Inferior
         JPanel inferior = new JPanel();
-        inferior.setBackground(Color.red);
-        inferior.add(new JLabel("<footer>"));
+        inferior.setBackground(new Color(205,92,92));
+        JLabel inferiorLabel = new JLabel("<footer>");
+        inferiorLabel.setForeground(Color.white);
+        inferior.add(inferiorLabel);
         ventana.add(inferior,BorderLayout.SOUTH);
 
         // Izquierda
         JPanel izquierda = new JPanel();
-        izquierda.setBackground(Color.red);
-        izquierda.add(new JLabel("<nav>"));
+        izquierda.setBackground(new Color(205,92,92));
+        JLabel izquierdaLabel = new JLabel("<footer>");
+        izquierdaLabel.setForeground(Color.white);
+        izquierda.add(izquierdaLabel);
         izquierda.setLayout(new GridBagLayout());
         Border bordeIzquierdo = BorderFactory.createMatteBorder(2, 0, 6, 3, Color.white);
         izquierda.setBorder(bordeIzquierdo);
@@ -44,74 +49,90 @@ public class dolor {
         
         // Derecha
         JPanel derecha = new JPanel();
-        derecha.setBackground(Color.red);
+        derecha.setBackground(new Color(205,92,92));
         derecha.setLayout(new GridBagLayout());
-        derecha.add(new JLabel("<aside>"));
+        JLabel derechaLabel = new JLabel("<aside>");
+        derechaLabel.setForeground(Color.white);
+        derecha.add(derechaLabel);
         Border bordeDerecha = BorderFactory.createMatteBorder(2, 3, 6, 0, Color.white);
         derecha.setBorder(bordeDerecha);
         ventana.add(derecha,BorderLayout.EAST);
 
         // Centro
         JPanel centro = new JPanel();
+        centro.setBackground(Color.white);
         // Asegurar que el layout de 'centro' es BoxLayout vertical
         centro.setLayout(new BoxLayout(centro,BoxLayout.Y_AXIS));
         ventana.add(centro,BorderLayout.CENTER);
 
         // Section Norte
         JPanel sectionNorte = new JPanel();
+        sectionNorte.setBackground(Color.white);
+
         // Centrar el texto en article
         sectionNorte.setLayout(new GridBagLayout());
         centro.add(sectionNorte);
         
         // Section
         JPanel section = new JPanel();
-        section.setBackground(Color.red);
-        // Centrar el texto en section
+        section.setBackground(new Color(205,92,92));
         section.setLayout(new GridBagLayout());
-        section.add(new JLabel("<section>"));
+        JLabel sectionLabel = new JLabel("<section>");
+        sectionLabel.setForeground(Color.white);
+        section.add(sectionLabel);
         centro.add(section);
         
         // Section Sur
         JPanel sectionSur = new JPanel();
-        // Centrar el texto en article
+        sectionSur.setBackground(new Color(205,92,92));
         sectionSur.setLayout(new GridBagLayout());
         centro.add(sectionSur);
 
         // Header del centro
         JPanel headerCentral = new JPanel();
-        headerCentral.setBackground(Color.yellow);
-        // Centrar el texto en headerCentral
+        headerCentral.setBackground(new Color(189,183,107));
         headerCentral.setLayout(new GridBagLayout());
-        headerCentral.add(new JLabel("<header>"));
+        JLabel headerCentralLabel = new JLabel("<header>");
+        headerCentralLabel.setForeground(Color.white);
+        headerCentral.add(headerCentralLabel);
         centro.add(headerCentral);
 
         // Header Sur
         JPanel headerSur = new JPanel();
-        // Centrar el texto en article
+        headerSur.setBackground(new Color(205,92,92));
         headerSur.setLayout(new GridBagLayout());
         centro.add(headerSur);
 
         // Article
         JPanel article = new JPanel();
-        article.setBackground(Color.yellow);
-        // Centrar el texto en article
+        article.setBackground(new Color(189,183,107));
         article.setLayout(new GridBagLayout());
-        article.add(new JLabel("<article>"));
+        JLabel articleLabel = new JLabel("<article>");
+        articleLabel.setForeground(Color.white);
+        article.add(articleLabel);
         centro.add(article);
 
         // Article Sur
         JPanel articleSur = new JPanel();
+        articleSur.setBackground(new Color(205,92,92));
+
         // Centrar el texto en article
         articleSur.setLayout(new GridBagLayout());
         centro.add(articleSur);
 
         // Footer
         JPanel footer = new JPanel();
-        footer.setBackground(Color.yellow);
-        // Centrar el texto en footer
+        footer.setBackground(new Color(189,183,107));
         footer.setLayout(new GridBagLayout());
-        footer.add(new JLabel("<footer>"));        
+        JLabel footerLabel = new JLabel("<footer>");
+        footerLabel.setForeground(Color.white);
+        footer.add(footerLabel);
         centro.add(footer);
+
+        JPanel surFooter = new JPanel();
+        surFooter.setBackground(new Color(205,92,92));
+        surFooter.setLayout(new GridBagLayout());
+        centro.add(surFooter);
 
 
 
@@ -126,13 +147,14 @@ public class dolor {
 
                 // Gestion altos zona central
                 int secNorteH = (int) Math.round(h*0.01);
-                int secH = (int) Math.round(h * 0.1);   // 5%
+                int secH = (int) Math.round(h * 0.1);
                 int secSurH = (int) Math.round(h*0.01);
-                int headerH = (int) Math.round(h * 0.15); // 15%
+                int headerH = (int) Math.round(h * 0.15);
                 int headerSurH = (int) Math.round(h*0.01);
-                int articleH = (int) Math.round(h * 0.54); // 60%
+                int articleH = (int) Math.round(h * 0.52);
                 int articleSurH = (int) Math.round(h*0.01);
-                int footerH = h - secH - headerH - articleH-1; // restante (20%)
+                int footerH = (int) Math.round(h*0.16);
+                int surFooterH = h - secNorteH - secH - secSurH - headerH - headerSurH - articleH - articleSurH - footerH - 6;
 
                 // aplicación los calculos de forma dinamica
                 sectionNorte.setPreferredSize(new java.awt.Dimension(centro.getWidth(), secNorteH));
@@ -159,6 +181,9 @@ public class dolor {
                 footer.setPreferredSize(new java.awt.Dimension(centro.getWidth(), footerH));
                 footer.setMaximumSize(new java.awt.Dimension(Integer.MAX_VALUE, footerH));
 
+                surFooter.setPreferredSize(new java.awt.Dimension(centro.getWidth(), surFooterH));
+                surFooter.setMaximumSize(new java.awt.Dimension(Integer.MAX_VALUE, surFooterH));
+
 
 
                 // Laterales
@@ -182,7 +207,8 @@ public class dolor {
         resizer.componentResized(null);
 
         
-        // Muestra ventana con todo lo correspondiente
+        // Muestra ventana con todo lo correspondiente y matamos al peligros Resizable
+        ventana.setResizable(false);
         ventana.setVisible(true);
 
     }
